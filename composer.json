@@ -1,0 +1,30 @@
+{
+    "name": "campaigningsoftware/cambuildr-cloudflare",
+    "description": "A package that allows to interact with the Cloudflare Client API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CampaigningSoftware\\CambuildrCloudflare\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "stefanschindler",
+            "email": "stefan.schindler@cambuildr.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.14",
+        "cloudflare/sdk": "^1.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CampaigningSoftware\\CambuildrCloudflare\\CambuildrCloudflareServiceProvider"
+            ]
+        }
+    }
+}
